@@ -1,0 +1,32 @@
+/*!
+	@file   drv_adc_config.h
+	@brief  <brief description here>
+	@t.odo	-
+*/
+
+/******************************************************************************
+* Preprocessor Definitions & Macros
+******************************************************************************/
+/*Choose your mcu*/
+//define STM32H7
+//define STM32L5
+
+#define ENUM_ADC_Input
+typedef enum
+{
+	ADC_V12A_MEAS   = 0x10,
+	ADC_V12B_MEAS 	= 0x11,
+	ADC_HVM_SENSE 	= 0x12,
+	ADC_HVP_SENSE 	= 0x13,
+	ADC_PRE_SENSE 	= 0x14,
+	ADC_V12_MEAS 	= 0x15,
+	ADC_V12LP_MEAS	= 0x16,
+	ADC_I12A_MEAS 	= 0x17,
+	ADC_I12B_MEAS 	= 0x18,
+	ADC_TEMP 		= 0x19,
+	ADC_BATT 		= 0x1A
+}ADC_Input;
+
+/******************************************************************************
+* EOF - NO CODE AFTER THIS LINE
+******************************************************************************/
